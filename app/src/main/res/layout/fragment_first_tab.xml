@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextUSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter US Dollars"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewEuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Euro: "
+        android:layout_below="@id/editTextUSD"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewRupee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Indian Rupee: "
+        android:layout_below="@id/textViewEuro"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewAUD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Australian Dollars: "
+        android:layout_below="@id/textViewRupee"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewCAD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canadian Dollars: "
+        android:layout_below="@id/textViewAUD"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/convertCurrencyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/textViewCAD"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextMiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Miles"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewKilometers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilometers: "
+        android:layout_below="@id/editTextMiles"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewMeters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meters: "
+        android:layout_below="@id/textViewKilometers"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewFeet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feet: "
+        android:layout_below="@id/textViewMeters"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewInches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inches: "
+        android:layout_below="@id/textViewFeet"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/textViewInches"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pounds"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewKilograms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilograms: "
+        android:layout_below="@id/editTextPounds"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewGrams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grams: "
+        android:layout_below="@id/textViewKilograms"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewOunces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ounces: "
+        android:layout_below="@id/textViewGrams"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/convertWeightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/textViewOunces"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

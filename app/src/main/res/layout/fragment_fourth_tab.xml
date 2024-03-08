@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Fahrenheit"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celsius: "
+        android:layout_below="@id/editTextFahrenheit"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewKelvin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelvin: "
+        android:layout_below="@id/textViewCelsius"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/convertTemperatureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/textViewKelvin"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
